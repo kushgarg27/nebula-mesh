@@ -55,3 +55,14 @@ nebula-mesh/
 
 - This MVP currently favors fast iteration and protocol plumbing over full native parity.
 - For production: replace static pairing code, add TLS (`wss`), and harden native capture loops.
+
+## CI Artifacts
+
+GitHub Actions builds release binaries for Windows and macOS on:
+- pushes to `main`
+- pull requests targeting `main`
+- tags like `v0.1.0`
+
+Download compiled binaries from the workflow run artifacts:
+- `nebula-Windows-release`
+- `nebula-macOS-release`
