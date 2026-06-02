@@ -1,0 +1,29 @@
+active_controller = "gaming-pc"
+
+[[devices]]
+id = "gaming-pc"
+display_name = "Gaming PC Head"
+host = "192.168.1.20"
+screen = { width = 2560, height = 1440 }
+edges = { left = "mac-air", right = "mac-pro", bottom = "ideapad" }
+
+[[devices]]
+id = "ideapad"
+display_name = "Ideapad Hub"
+host = "192.168.1.10"
+screen = { width = 1920, height = 1080 }
+edges = { top = "gaming-pc" }
+
+[[devices]]
+id = "mac-air"
+display_name = "MacBook Air"
+host = "192.168.1.30"
+screen = { width = 2880, height = 1864 }
+edges = { right = "gaming-pc" }
+
+[[devices]]
+id = "mac-pro"
+display_name = "MacBook Pro"
+host = "192.168.1.31"
+screen = { width = 3024, height = 1964 }
+edges = { left = "gaming-pc" }
